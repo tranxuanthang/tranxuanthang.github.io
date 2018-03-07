@@ -14,7 +14,7 @@
 			background-size: cover;
 		}
 
-		.title {
+		.title.qd-title {
 			font-size: 2.8rem;
 			line-height: 4rem;
 		}
@@ -24,7 +24,7 @@
 		}
 
 		.blackbg {
-			background: rgba(0, 0, 0, 0.8);
+			background: rgba(0, 51, 0, 0.6);
 			padding: 0.2rem;
 			line-height: 2.1rem;
 		}
@@ -50,55 +50,92 @@
 		.name-imp {
 			color: rgba(255,255,255,0.8);
 		}
+
+		.hero.is-primary.qd-hero2 {
+			background-color: rgba(0, 102, 0, 0.8);
+		}
+
+		.qd-hero2 h1 {
+			font-size: 3rem;
+		}
+
+		.column {
+			text-align: center;
+		}
+
+		.column img {
+			border-radius: 8px;
+			border: 1px solid rgba(0, 0, 0, 0.3);
+			width: 128px;
+		}
+		
+		.column h2 {
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
+
+		.hero .content h2 {
+			color: rgba(255,255,255,0.8);
+		}
 	</style>
 </head>
 
 <body>
 	<section class="hero is-info is-medium">
 		<div class="hero-body">
-			<div class="container ctn-info">
-				<h1 class="title is-spaced">
-					<span class="blackbg">Quick Dictionary</span>
-				</h1>
-				<h2 class="subtitle">
-					<span class="blackbg">A Firefox webExtension.</span>
-				</h2>
-				<h2 class="subtitle">
-					<span class="blackbg">Translate any words with just 1-click.</span>
-				</h2>
-				<h2 class="subtitle">
-					<span class="blackbg">Support many languages with Wiktionary and Google Translate.</span>
-				</h2>
+			<div class="container is-flex-tablet">
+				<div class="is-hidden-mobile">
+					<img src="icon.png" alt="Quick Dictionary" style="width: 64px" />
+				</div>
+				<div class="ctn-info">
+					<h1 class="title is-spaced qd-title">
+						<span class="blackbg">Quick Dictionary</span>
+					</h1>
+
+					<h2 class="subtitle">
+						<span class="blackbg">A Firefox webExtension.</span>
+					</h2>
+
+					<h2 class="subtitle">
+						<span class="blackbg">Translate any words on the Web with just 1-click.</span>
+					</h2>
+
+					<h2 class="subtitle">
+						<span class="blackbg">Support many languages with Wiktionary and Google Translate.</span>
+					</h2>
+
+					<label class="label dl-label">Download (v2.0.0a2):</label>
+
+					<a class="button is-white dl-button" target="_blank" href="https://addons.mozilla.org/vi/firefox/addon/tu-dien-nhanh-quick-dictionary/">
+						<span class="icon">
+							<i class="fab fa-firefox"></i>
+						</span>
+						<span>Download for Firefox</span>
+					</a>
+
+					<a class="button is-white dl-button" target="_blank" href="https://github.com/tranxuanthang/quick-dictionary">
+						<span class="icon">
+							<i class="fab fa-github"></i>
+						</span>
+						<span>Source on GitHub</span>
+					</a>
+				</div>
 			</div>
-			<div class="container ctn-download">
-				<label class="label dl-label">Download (v2.0.0a2):</label>
-				<a class="button is-white dl-button" target="_blank" href="https://addons.mozilla.org/vi/firefox/addon/tu-dien-nhanh-quick-dictionary/">
-					<span class="icon">
-						<i class="fab fa-firefox"></i>
-					</span>
-					<span>Download for Firefox</span>
-				</a>
-				<a class="button is-white dl-button" target="_blank" href="https://github.com/tranxuanthang/quick-dictionary">
-					<span class="icon">
-						<i class="fab fa-github"></i>
-					</span>
-					<span>Source on Github</span>
-				</a>
-			</div>
+			
 		</div>
 		<div class="hero-foot">
 			
 		</div>
 	</section>
 
-	<section class="hero is-medium is-primary is-bold">
+	<section class="hero is-medium is-primary qd-hero2">
 		<div class="hero-body">
 			<div class="container has-text-centered">
-				<h1 class="title">
-					Welcome to a new <span class="name-imp">Quick Dictionary</span>!
+				<h1 class="title is-spaced">
+					Welcome to the new <span class="name-imp">Quick Dictionary</span>!
 				</h1>
 				<h2 class="subtitle">
-					Quick Dictionary v2.0.0 has been redesigned completely. See all new features below.
+					Quick Dictionary v2.0.0 has been redesigned completely. Discover all new features below.
 				</h2>
 			</div>
 		</div>
@@ -106,15 +143,58 @@
 
 	<section class="section">
 		<div class="container">
-			<div class="content">
-				<h2>Features:</h2>
-				<ul>
-					<li>Quick Button: Selecting any word or paragraph on any website will show up a button. Clicking on it will open a popup, or show the meaning in Sidebar if available.</li>
-					<li>Quick Popup: If Sidebar is not available, a small popup will show up right below your selected text.</li>
-					<li>Sidebar support: Find the Sidebar-toggle button on your browser, then switch the Sidebar mode to Quick Dictionary.</li>
-					<li>Context Menu: Coming soon.</li>
-					<li>Word suggestion: powered by Wiktionary API.</li>
-				</ul>
+			<h1 class="title">New features:</h1>
+			<div class="columns">
+				<div class="column">
+					<img src="img/quick-button-feature.png" alt="" />
+					<h2>Quick Button</h2>
+					<h3>Translate everything with just one click.</h3>
+				</div>
+				<div class="column">
+					<img src="img/quick-popup-feature.png" alt="" />
+					<h2>Quick Popup</h2>
+					<h3>Right below your selected word.</h3>
+				</div>
+				<div class="column">
+					<img src="img/sidebar-feature.png" alt="" />
+					<h2>Sidebar support</h2>
+					<h3>A dictionary beside your browse space.</h3>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<img src="img/context-feature.png" alt="" />
+					<h2>Context Menu support</h2>
+					<h3>In case you don't like Quick Button...</h3>
+				</div>
+				<div class="column">
+					<img src="img/suggestion-feature.png" alt="" />
+					<h2>Word suggestion</h2>
+					<h3>Powered by Wiktionary API.</h3>
+				</div>
+				<div class="column">
+					<img src="img/photon-feature.png" alt="" />
+					<h2>Photon Design</h2>
+					<h3>Integrate seamlessly with your Firefox Quantum.</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="hero is-dark is-bold">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">Changelog:</h1>
+				<div class="content">
+					<h2>Ver 2.0.0a2:</h2>
+					<ul>
+						<li>Rewrite most of the part of the extension.</li>
+						<li>Follow Firefox's Photon Design rules.</li>
+						<li>Sidebar support!</li>
+						<li>Quick Popup feature: now translation popup will show on your current site as an (iframe) element, instead of opening a new window.</li>
+						<li>Drop-down suggestion (autocomplete) for input field.</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -123,7 +203,7 @@
 		<div class="container">
 			<div class="content has-text-centered">
 				<p>
-					Made by tranxuanthang. Powered by <a href="https://bulma.io/" target="_blank">bulma.io</a>.
+					Made by tranxuanthang. Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> & <a href="https://bulma.io/" target="_blank">Bulma.io</a>.
 				</p>
 			</div>
 		</div>
