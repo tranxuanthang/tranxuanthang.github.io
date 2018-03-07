@@ -2,25 +2,85 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Dictionary</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<style>
+		.hero.is-info {
+			background-color: #989898;
+			background: url(./hero.png) #989898 no-repeat center center;
+			background-size: cover;
+		}
+
+		.title {
+			font-size: 2.8rem;
+			line-height: 4rem;
+		}
+
+		.subtitle:not(:last-child) {
+			margin-bottom: 1.1rem;
+		}
+
+		.blackbg {
+			background: rgba(0, 0, 0, 0.8);
+			padding: 0.2rem;
+			line-height: 2.1rem;
+		}
+
+		.ctn-info {
+			margin-bottom: 2rem;
+		}
+
+		.dl-label {
+			color: white;
+		}
+
+		.dl-button {
+			min-width: 14rem;
+			margin: 0.2rem 0.2rem 0.2rem 0;
+		}
+	</style>
 </head>
 
 <body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World
-            </h1>
-            <p class="subtitle">
-                My first website with
-                <strong>Bulma</strong>!
-            </p>
-        </div>
-    </section>
+	<section class="hero is-info is-medium">
+		<div class="hero-body">
+			<div class="container ctn-info">
+				<h1 class="title is-spaced">
+					<span class="blackbg">Quick Dictionary</span>
+				</h1>
+				<h2 class="subtitle">
+					<span class="blackbg">A Firefox webExtension.</span>
+				</h2>
+				<h2 class="subtitle">
+					<span class="blackbg">Translate any words with just 1-click.</span>
+				</h2>
+				<h2 class="subtitle">
+					<span class="blackbg">Support many languages with Wiktionary and Google Translate.</span>
+				</h2>
+			</div>
+			<div class="container ctn-download">
+				<label class="label dl-label">Download (v2.0.0a2):</label>
+				<a class="button is-white dl-button" target="_blank" href="https://addons.mozilla.org/vi/firefox/addon/tu-dien-nhanh-quick-dictionary/">
+					<span class="icon">
+						<i class="fab fa-firefox"></i>
+					</span>
+					<span>Download for Firefox</span>
+				</a>
+				<a class="button is-white dl-button" target="_blank" href="https://github.com/tranxuanthang/quick-dictionary">
+					<span class="icon">
+						<i class="fab fa-github"></i>
+					</span>
+					<span>Source on Github</span>
+				</a>
+			</div>
+		</div>
+		<div class="hero-foot">
+			
+		</div>
+	</section>
 </body>
 
 </html>
