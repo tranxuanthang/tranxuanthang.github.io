@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Guess</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="brain.js"></script>
+    <script src="index.js"></script>
+    <style>
+        .colorbox {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="colorbox" id="colorbox"></div>
+            <div class="guess" id="guess">
+                
+
+            </div>
+            <div id="colorchoose">
+                <label class="radio">
+                    <input type="radio" name="answer" value="trang"> Trắng
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="do"> Đỏ
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="hong"> Hồng
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="dacam"> Da cam
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="vang"> Vàng
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="xanhla"> Xanh lá
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="xanhbien"> Xanh nước biển
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="nau"> Nâu
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="tim"> Tím
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="xam"> Xám
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer" value="den"> Đen
+                </label>
+            </div>
+            <div>
+                <button id="submit">Xác nhận</button>
+                <button id="result">Kết quả</button>
+                <button id="next">Tiếp tục</button>
+            </div>
+            <div>
+                <textarea id="json"></textarea>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
