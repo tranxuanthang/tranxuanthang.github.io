@@ -62,6 +62,11 @@
 			background-color: rgba(0, 102, 0, 0.8);
 		}
 
+		.qd-hero2 {
+			background-image: linear-gradient(45deg, #034403 20.25%, #0a550e 20.25%, #0a550e 50%, #034403 50%, #034403 70.25%, #0a550e 70.25%, #0a550e 100%);
+			background-size: 111.72px 111.72px;
+		}
+
 		.qd-hero2 h1 {
 			font-size: 3rem;
 		}
@@ -83,6 +88,11 @@
 
 		.hero .content h2 {
 			color: rgba(255,255,255,0.8);
+		}
+
+		.version-info {
+			font-weight: x-small;
+			font-style: italic;
 		}
 	</style>
 </head>
@@ -111,7 +121,7 @@
 						<span class="blackbg">Support many languages with Wiktionary and Google Translate.</span>
 					</h2>
 
-					<label class="label dl-label">Download (v2.0.3a0):</label>
+					<label class="label dl-label">Download (v2.0.4):</label>
 
 					<a class="button is-white dl-button" target="_blank" href="https://addons.mozilla.org/vi/firefox/addon/tu-dien-nhanh-quick-dictionary/">
 						<span class="icon">
@@ -135,7 +145,7 @@
 		</div>
 	</section>
 
-	<section class="hero is-medium is-primary qd-hero2">
+	<section id="installed" class="hero is-medium is-primary qd-hero2">
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<h1 class="title is-spaced">
@@ -143,6 +153,9 @@
 				</h1>
 				<h2 class="subtitle">
 					Quick Dictionary v2.0 has been redesigned completely. Discover all new features below.
+				</h2>
+				<h2 class="version-info">
+					Newest: v2.0.4, released: October 5, 2019
 				</h2>
 			</div>
 		</div>
@@ -193,6 +206,16 @@
 			<div class="container">
 				<h1 class="title">Changelog:</h1>
 				<div class="content">
+					<h2>Ver 2.0.4:</h2>
+					<ul>
+						<li>Revert to v2.0.2, merge 2.0.3a0 changes (except "spell correct suggestion" feature). Newest source code is on GitHub!</li>
+						<li>Bug fix: Annoying bug makes this landing page shows up every time browser updates, not just Quick Dictionary updates.</li>
+						<li>Bug fix: Nasty bug makes result showing on all sidebar when multiple windows are opening,
+							or showing result on (wrong) other windows's sidebar if currently focused
+							window's sidebar is not opened.</li>
+						<li>Now the shortcut key for opening quick popup/showing result is <b>Ctrl + E</b> (or <b>Cmd + E</b> on macOS)!</li>
+						<li>First update in almost <i>two years</i>! More interesting feature updates are coming!</li>
+					</ul>
 					<h2>Ver 2.0.3a0:</h2>
 					<ul>
 						<li>Spell correct suggestion (for English only). <a href="https://imgur.com/UEw8sKg" alt="Screenshot" target="_blank">Screenshot</a>.</li>
