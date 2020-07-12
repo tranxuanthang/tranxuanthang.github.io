@@ -298,7 +298,7 @@
         .split('')
         .map(c => {
           if (c == '‌') return '0'
-          if (c == '​') return '1'
+          if (c == '‍') return '1'
         })
       const byteArr = chunk(binArr, 8)
         .map(bitArr => bitArr.join(''))
@@ -338,7 +338,7 @@
       return binArr
         .map(bin => {
           if (bin == 0) return '‌'
-          if (bin == 1) return '​'
+          if (bin == 1) return '‍'
         })
         .join('')
     }
