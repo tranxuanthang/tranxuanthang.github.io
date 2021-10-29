@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const skillCheck = new SkillCheck(document.getElementById('canvas'), {
     isContinuously: false,
-    checkTime: 2000,
+    checkTime: 1800,
     checkpointDifficulty: 0.08,
-    notifyBefore: 800,
+    notifyBefore: 500,
     playNotifyAudio: playNotifyAudio,
     playGreatAudio: playGreatAudio,
   })
